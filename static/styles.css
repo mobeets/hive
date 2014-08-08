@@ -1,0 +1,181 @@
+body {
+  /*background-color: #f9f5da;*/
+  font-family: 'Droid Serif', serif;
+}
+#wrapper {
+  background-color: white;
+  margin: 0 auto; /* centers */
+  display: table; /* takes width of children */
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+#content {
+  padding-top: 5px;
+  /*padding-bottom: 20px;*/
+  padding-left: 20px;
+  padding-right: 20px;
+}
+a:visited {
+  color: inherit;
+}
+a {
+  color: black;
+}
+.byline {
+  float: right;
+  font-size: 80%;
+}
+.byline a {
+  text-decoration: none;
+  border-bottom: dotted 1px black;
+}
+
+#charts {
+    margin-bottom: 50px;
+}
+#chart {
+    width: 1000px;
+}
+#panel {
+    float: left;
+    /*margin-top: 40px;*/
+    margin-left: 0px;
+    margin-bottom: 20px;
+    /*width: 660px;*/
+    z-index: 1;
+}
+#title {
+    float: left;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    font-size: 36px; 
+    font-weight: 300;     
+    text-shadow: 0 1px 0 #fff;
+}
+#rules {
+    float: left;
+    margin-top: 5px;
+}
+hr {
+    clear: both;
+}
+.hint {
+    width: 1280px; 
+    right: 0px; 
+    color: rgb(153, 153, 153); 
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.hr-style {
+   border: 0;
+   height: 2px;
+   width: 80%;
+   color: #E8E8E8;
+   background-color: #E8E8E8;
+}
+
+.chart-box {
+    float: left;
+}
+.chart {
+    margin-bottom: 25px;
+}
+
+#controls {
+    position: relative;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+}
+.selected {
+    stroke: orange;
+    stroke-width: 2px;
+}
+.hovered {
+    fill-opacity: 0.7;
+}
+
+#piece-bar {
+    clear: both;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.pieces {
+}
+.pieces:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.piece-selected {
+    background-color: red;
+}
+.piece-unselected {
+    background-color: gray;
+}
+.piece-spot {
+    border: 1px solid black;
+    overflow: hidden;
+    height: 79px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.button {
+    width: 30px;
+    cursor: pointer;
+    float: left;
+}
+.button:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+#undo-button {
+    width: 28px;
+    margin-top: 2px;
+}
+
+#player {
+    float: left;
+    margin-right: 7px;
+}
+
+.player-switch {
+    background-color:#f9f9f9;
+    text-indent: 0;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    color: #666666;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+.player-switch:hover {
+    text-decoration: none;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
+    background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
+    background-color:#e9e9e9;
+}
+.player-switch:active {
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+}

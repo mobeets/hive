@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml"> 
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta name="description" content="Play the board game Hive online with two players on the same computer.">
+        
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link rel=StyleSheet href="static/styles.css" type="text/css">
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-42857746-1', 'jehosafet.com');
+          ga('require', 'linkid', 'linkid.js');
+          ga('send', 'pageview');
+        </script>
+
+        <title>Hive (Jehosafet)</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <span class="byline">&#10555; <a href="http://www.jehosafet.com" target="_blank">Jehosafet</a></span>
+                <div id="panel">
+                    <span id="title">Hive</span>
+                    <span id="rules">
+                        (<a href="http://www.gen42.com/downloads/rules/Hive_Rules.pdf" target="_blank">Rules</a> /
+                        <a href="https://github.com/mobeets/hive" target="_blank">Info</a>)
+                    </span>
+                    
+                    <hr>
+                    <div id="controls">
+                        <a href="#" id="player" class="player-switch">Player 2</a>
+                        <img id="undo-button" alt="Remove selected" class="button" src="images/ex.png">
+                        <img id="trash-button" alt="Exit game" class="button" src="images/trash.png">
+                    </div>
+                    <hr>
+                    <div id="piece-bar">
+                        <div id="beetle" class="piece-spot">
+                            <img class="pieces" src="images/beetle.png">
+                        </div>
+                        <div id="ant" class="piece-spot">
+                            <img class="pieces" src="images/ant.png">
+                        </div>
+                        <div id="grasshopper" class="piece-spot">
+                            <img class="pieces" src="images/grasshopper.png">
+                        </div>
+                        <div id="spider" class="piece-spot">
+                            <img class="pieces" src="images/spider.png">
+                        </div>
+                        <div id="bee" class="piece-spot">
+                            <img class="pieces" src="images/bee.png">
+                        </div>
+                        <div id="mosquito" class="piece-spot">
+                            <img class="pieces" src="images/mosquito.png">
+                        </div>
+                        <div id="ladybug" class="piece-spot">
+                            <img class="pieces" src="images/ladybug.png">
+                        </div>
+                        <div id="pillbug" class="piece-spot">
+                            <img class="pieces" src="images/pillbug.png">
+                        </div>
+                    </div>
+                </div>
+                <div id="charts">
+                    <div class="chart-box">
+                        <span class="chart-title"></span>
+                        <div id="chart" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="static/d3.v3.min.js"></script>
+        <script type="text/javascript" src="static/d3.hexbin.v0.min.js"></script>
+        <script type="text/javascript" src="static/jquery.min.js"></script>
+        <script type="text/javascript" src="static/hive.js"></script>
+    </body>
+</html>
